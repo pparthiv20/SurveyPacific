@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Quality Framework - Survey Pacific</title>
+  <meta name="description" content="Explore Survey Pacific’s data quality framework for reliable survey design, respondent validation, fieldwork monitoring, and secure research delivery.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-inter text-brand-dark bg-white overflow-x-clip">
+  <header class="site-header relative z-20 w-full bg-white/35 backdrop-blur-[16px] shadow-[0_1px_6.7px_rgba(0,0,0,0.06)] border border-white/60 h-[68px]">
+  <div class="max-w-[1240px] h-full mx-auto px-6 lg:px-0 flex items-center justify-between">
+    <a href="index.html" aria-label="Survey Pacific home">
+      <img src="assets/imgs/logo-sp.png" alt="Survey Pacific" class="h-[42.21px] object-contain">
+    </a>
+    <nav class="hidden lg:flex items-center gap-4" aria-label="Primary navigation">
+              <div class="group relative" data-dropdown>
+          <button type="button" class="flex items-center gap-[2px] text-[12px] font-medium hover:text-brand-blue transition" aria-haspopup="true" aria-expanded="false" data-dropdown-toggle>
+            Research Needs            <svg aria-hidden="true" class="w-3 h-3 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="mega-menu pointer-events-none invisible absolute left-1/2 top-full z-50 w-[682px] -translate-x-1/2 translate-y-2 pt-5 opacity-0 transition-all duration-200 ease-out" aria-hidden="true">
+            <div class="rounded-xl border border-white/70 bg-white p-7 shadow-[0_16px_45px_rgba(16,38,51,0.16)]">
+              <p class="text-[11px] font-semibold uppercase tracking-[1.2px] text-brand-blue">What do you need to understand?</p>
+              <div class="mt-4 grid grid-cols-3 gap-x-8 gap-y-3">
+                                  <a href="market-research.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Understand a Market</a>
+                                  <a href="product-research.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Test a Product or Concept</a>
+                                  <a href="brand-consumer-research.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Measure Brand Health</a>
+                                  <a href="customer-research.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Know Your Customers</a>
+                                  <a href="social-research.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Track Public Opinion</a>
+                                  <a href="user-research.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Improve User Experience</a>
+                                  <a href="b2b-research.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Validate Business Decisions</a>
+                                  <a href="contact-us.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-blue underline whitespace-nowrap">Not Sure? Describe Your Need</a>
+                              </div>
+            </div>
+          </div>
+        </div>
+              <div class="group relative" data-dropdown>
+          <button type="button" class="flex items-center gap-[2px] text-[12px] font-medium hover:text-brand-blue transition" aria-haspopup="true" aria-expanded="false" data-dropdown-toggle>
+            Data Collection            <svg aria-hidden="true" class="w-3 h-3 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="mega-menu pointer-events-none invisible absolute left-1/2 top-full z-50 w-[682px] -translate-x-1/2 translate-y-2 pt-5 opacity-0 transition-all duration-200 ease-out" aria-hidden="true">
+            <div class="rounded-xl border border-white/70 bg-white p-7 shadow-[0_16px_45px_rgba(16,38,51,0.16)]">
+              <p class="text-[11px] font-semibold uppercase tracking-[1.2px] text-brand-blue">How we collect reliable evidence</p>
+              <div class="mt-4 grid grid-cols-3 gap-x-8 gap-y-3">
+                                  <a href="online-survey.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Online Surveys</a>
+                                  <a href="telephone-cati-survey.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">CATI / Telephone Surveys</a>
+                                  <a href="face-to-face-survey.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Face-to-Face & CAPI</a>
+                                  <a href="focus-groups.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Focus Groups</a>
+                                  <a href="depth-interviews.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Depth Interviews</a>
+                                  <a href="mystery-shop.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Mystery Shopping</a>
+                                  <a href="product-testing.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Product Testing</a>
+                                  <a href="#" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Respondent Recruitment</a>
+                                  <a href="multi-country-fieldwork.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Multi-Country Fieldwork</a>
+                              </div>
+            </div>
+          </div>
+        </div>
+              <div class="group relative" data-dropdown>
+          <button type="button" class="flex items-center gap-[2px] text-[12px] font-medium hover:text-brand-blue transition" aria-haspopup="true" aria-expanded="false" data-dropdown-toggle>
+            Audiences            <svg aria-hidden="true" class="w-3 h-3 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="mega-menu pointer-events-none invisible absolute left-1/2 top-full z-50 w-[682px] -translate-x-1/2 translate-y-2 pt-5 opacity-0 transition-all duration-200 ease-out" aria-hidden="true">
+            <div class="rounded-xl border border-white/70 bg-white p-7 shadow-[0_16px_45px_rgba(16,38,51,0.16)]">
+              <p class="text-[11px] font-semibold uppercase tracking-[1.2px] text-brand-blue">Who we can reach</p>
+              <div class="mt-4 grid grid-cols-3 gap-x-8 gap-y-3">
+                                  <a href="consumers.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Consumers</a>
+                                  <a href="b2b-decision-makers.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">B2B Decision Makers</a>
+                                  <a href="healthcare-professionals.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Healthcare Professionals</a>
+                                  <a href="msme-owners.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">MSME Owners</a>
+                                  <a href="enterprise-leaders.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Enterprise Leaders</a>
+                                  <a href="citizens-public-audiences.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Citizens & Public Audiences</a>
+                                  <a href="hard-to-reach-audiences.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark whitespace-nowrap col-span-2">Niche / Hard-to-Reach Groups</a>
+                                  <a href="custom-audience-recruitment.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Custom Audience Recruitment</a>
+                              </div>
+            </div>
+          </div>
+        </div>
+              <div class="group relative" data-dropdown>
+          <button type="button" class="flex items-center gap-[2px] text-[12px] font-medium hover:text-brand-blue transition" aria-haspopup="true" aria-expanded="false" data-dropdown-toggle>
+            Markets            <svg aria-hidden="true" class="w-3 h-3 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="mega-menu pointer-events-none invisible absolute left-1/2 top-full z-50 w-[682px] -translate-x-1/2 translate-y-2 pt-5 opacity-0 transition-all duration-200 ease-out" aria-hidden="true">
+            <div class="rounded-xl border border-white/70 bg-white p-7 shadow-[0_16px_45px_rgba(16,38,51,0.16)]">
+              <p class="text-[11px] font-semibold uppercase tracking-[1.2px] text-brand-blue">Where we execute research</p>
+              <div class="mt-4 grid grid-cols-3 gap-x-8 gap-y-3">
+                                  <a href="global-coverage.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Global Coverage</a>
+                                  <a href="india.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">India</a>
+                                  <a href="asia-pacific.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Asia Pacific</a>
+                                  <a href="middle-east.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Middle East</a>
+                                  <a href="europe.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Europe</a>
+                                  <a href="north-america.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">North America</a>
+                                  <a href="africa.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Africa</a>
+                                  <a href="country-feasibility.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Country Feasibility</a>
+                              </div>
+            </div>
+          </div>
+        </div>
+              <div class="group relative" data-dropdown>
+          <button type="button" class="flex items-center gap-[2px] text-[12px] font-medium hover:text-brand-blue transition" aria-haspopup="true" aria-expanded="false" data-dropdown-toggle>
+            Quality            <svg aria-hidden="true" class="w-3 h-3 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="mega-menu pointer-events-none invisible absolute left-1/2 top-full z-50 w-[682px] -translate-x-1/2 translate-y-2 pt-5 opacity-0 transition-all duration-200 ease-out" aria-hidden="true">
+            <div class="rounded-xl border border-white/70 bg-white p-7 shadow-[0_16px_45px_rgba(16,38,51,0.16)]">
+              <p class="text-[11px] font-semibold uppercase tracking-[1.2px] text-brand-blue">How we protect data quality</p>
+              <div class="mt-4 grid grid-cols-3 gap-x-8 gap-y-3">
+                                  <a href="data-quality-framework.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Data Quality Framework</a>
+                                  <a href="respondent-verification.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Respondent Verification</a>
+                                  <a href="fraud-prevention.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Fraud Prevention</a>
+                                  <a href="fieldwork-monitoring.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Fieldwork Monitoring</a>
+                                  <a href="privacy-compliance.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Privacy & Compliance</a>
+                                  <a href="research-ethics.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Research Ethics</a>
+                                  <a href="sample-management.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Sample Management</a>
+                                  <a href="quality-dashboard.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Quality Dashboard</a>
+                              </div>
+            </div>
+          </div>
+        </div>
+              <div class="group relative" data-dropdown>
+          <button type="button" class="flex items-center gap-[2px] text-[12px] font-medium hover:text-brand-blue transition" aria-haspopup="true" aria-expanded="false" data-dropdown-toggle>
+            Insights            <svg aria-hidden="true" class="w-3 h-3 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="mega-menu pointer-events-none invisible absolute left-1/2 top-full z-50 w-[682px] -translate-x-1/2 translate-y-2 pt-5 opacity-0 transition-all duration-200 ease-out" aria-hidden="true">
+            <div class="rounded-xl border border-white/70 bg-white p-7 shadow-[0_16px_45px_rgba(16,38,51,0.16)]">
+              <p class="text-[11px] font-semibold uppercase tracking-[1.2px] text-brand-blue">Proof, thinking, and guidance</p>
+              <div class="mt-4 grid grid-cols-3 gap-x-8 gap-y-3">
+                                  <a href="case-studies.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Case Studies</a>
+                                  <a href="research-guides.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Research Guides</a>
+                                  <a href="industry-reports.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Industry Reports</a>
+                                  <a href="survey-design-notes.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Survey Design Notes</a>
+                                  <a href="data-collection-playbooks.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Data Collection Playbooks</a>
+                                  <a href="blogs.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Blog</a>
+                                  <a href="faqs.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">FAQs</a>
+                              </div>
+            </div>
+          </div>
+        </div>
+              <div class="group relative" data-dropdown>
+          <button type="button" class="flex items-center gap-[2px] text-[12px] font-medium hover:text-brand-blue transition" aria-haspopup="true" aria-expanded="false" data-dropdown-toggle>
+            Company            <svg aria-hidden="true" class="w-3 h-3 shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="mega-menu pointer-events-none invisible absolute left-1/2 top-full z-50 w-[682px] -translate-x-1/2 translate-y-2 pt-5 opacity-0 transition-all duration-200 ease-out" aria-hidden="true">
+            <div class="rounded-xl border border-white/70 bg-white p-7 shadow-[0_16px_45px_rgba(16,38,51,0.16)]">
+              <p class="text-[11px] font-semibold uppercase tracking-[1.2px] text-brand-blue">About Survey Pacific</p>
+              <div class="mt-4 grid grid-cols-3 gap-x-8 gap-y-3">
+                                  <a href="about-us.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">About Us</a>
+                                  <a href="global-network.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Global Network</a>
+                                  <a href="leadership.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Leadership</a>
+                                  <a href="careers.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Careers</a>
+                                  <a href="become-supplier.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Become a Supplier</a>
+                                  <a href="contact-us.html" class="text-[12px] leading-5 transition hover:text-brand-blue text-brand-dark">Contact</a>
+                              </div>
+            </div>
+          </div>
+        </div>
+          </nav>
+    <button type="button" data-open-study-modal class="border border-brand-blue text-brand-blue text-[12px] font-semibold px-[24px] lg:px-[34px] py-[10px] rounded-lg hover:bg-brand-blue hover:text-white transition whitespace-nowrap bg-transparent cursor-pointer">Start a Study</button>
+    <button id="mobileMenuBtn" class="lg:hidden text-brand-dark text-2xl" aria-label="Open navigation" aria-controls="mobileMenu" aria-expanded="false">
+      <svg class="mobile-menu-icon w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path class="menu-line menu-line-top" stroke-linecap="round" stroke-width="2" d="M4 6h16"/><path class="menu-line menu-line-middle" stroke-linecap="round" stroke-width="2" d="M4 12h16"/><path class="menu-line menu-line-bottom" stroke-linecap="round" stroke-width="2" d="M4 18h16"/></svg>
+    </button>
+  </div>
+  <nav id="mobileMenu" class="lg:hidden absolute top-full left-0 z-50 w-full overflow-y-auto border-t border-brand-bordergray bg-white shadow-lg" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="flex flex-col px-5 py-3">
+      <details class="mobile-nav-group">
+        <summary>Research Needs</summary>
+        <div class="mobile-nav-submenu"><a href="market-research.html">Market Research</a><a href="product-research.html">Product &amp; Concept Testing</a><a href="brand-consumer-research.html">Brand Health</a><a href="customer-research.html">Customer Research</a><a href="user-research.html">User Experience</a><a href="social-research.html">Public Opinion</a></div>
+      </details>
+      <a href="about-us.html">About Us</a>
+      <a href="careers.html">Careers</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+  </nav>
+</header>
+
+  <main>
+    <section class="w-full bg-brand-blue">
+      <div class="max-w-[1240px] mx-auto px-6 lg:px-0 py-[52px] grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-8 lg:gap-12 items-center">
+        <div>
+          <p class="page-breadcrumb text-[12px] font-medium text-white/75">Home / Quality / Data Quality Framework</p>
+          <h1 class="text-[52px] leading-[60px] font-bold text-white font-helvetica mt-4 max-w-[700px]">Ensuring Perfect Data Integrity at Every Stage</h1>
+          <p class="text-[14px] leading-[22px] text-white/80 max-w-[620px] mt-4">Decisions are only as good as the research behind them. Our rigorous, multi-layered quality assurance framework filters fraud, certifies compliance, and supports reliable execution.</p>
+        </div>
+        <div class="lg:justify-self-end w-full max-w-[400px] rounded-xl bg-white p-6 shadow-lg">
+          <h2 class="text-[20px] leading-6 font-bold text-brand-dark font-helvetica">Quality Assurance Scorecard</h2>
+          <div class="mt-4 divide-y divide-slate-200">
+            <div class="flex justify-between gap-3 py-3 text-[13px]"><span class="text-brand-muted">Bot / Fraud Filtration</span><strong class="text-brand-green">Multi-layered</strong></div>
+            <div class="flex justify-between gap-3 py-3 text-[13px]"><span class="text-brand-muted">Logic &amp; Attention Checks</span><strong class="text-brand-blue">Built into design</strong></div>
+            <div class="flex justify-between gap-3 py-3 text-[13px]"><span class="text-brand-muted">Post-Field Validation</span><strong class="text-brand-gold">Quality reviewed</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-[60px] lg:py-[74px]">
+      <div class="max-w-[1240px] mx-auto px-6 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
+        <div><p class="text-[12px] font-semibold uppercase tracking-[1.2px] text-brand-blue">Unified Security Blueprint</p><h2 class="text-[30px] lg:text-[38px] font-bold leading-[1.2] text-brand-dark font-helvetica mt-3 max-w-[540px]">A comprehensive shield covering the full research lifecycle.</h2></div>
+        <p class="text-[14px] leading-[22px] text-brand-muted">High-quality market research requires consistent attention from questionnaire inception to final client delivery. Our data quality framework brings together survey design, respondent validation, fieldwork monitoring, and careful review so that issues can be identified and addressed throughout the research lifecycle.</p>
+      </div>
+    </section>
+
+    <section class="bg-brand-bggray py-[56px] lg:py-[64px]">
+      <div class="max-w-[1240px] mx-auto px-6 lg:px-0">
+        <p class="text-[12px] font-semibold uppercase tracking-[1.2px] text-brand-blue">Framework Pillars</p><h2 class="text-[30px] lg:text-[38px] font-bold leading-tight text-brand-dark font-helvetica mt-3">Four Core Vectors of Data Protection</h2>
+        <div class="grid md:grid-cols-2 gap-4 mt-8">
+          <article class="rounded-lg border border-brand-blue bg-white p-6 min-h-[180px]"><div class="w-10 h-10 rounded-full bg-blue-50/40 text-brand-blue flex items-center justify-center" aria-hidden="true"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M8 4h8a2 2 0 0 1 2 2v14H6V6a2 2 0 0 1 2-2Z"/><path stroke-width="1.8" stroke-linecap="round" d="M9 4V3h6v1M9 10h6M9 14h2m2 0 1.5 1.5L18 12"/></svg></div><h3 class="text-[20px] font-bold leading-6 mt-4">1. Survey Design Quality</h3><p class="text-[14px] leading-5 text-brand-muted mt-2">Questionnaire logic flow, conditional path testing, randomized option scaling, cultural review, and pre-launch usability checks help reduce avoidable design errors.</p></article>
+          <article class="rounded-lg border border-brand-red bg-white p-6 min-h-[180px]"><div class="w-10 h-10 rounded-full bg-red-50/40 text-brand-red flex items-center justify-center" aria-hidden="true"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m4.5 7.8 7.5 4.3 7.5-4.3M12 12.2V21m-3.2-14 7.4 4.3"/><path stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m9.5 15.5 1.7 1.7 3.5-3.5"/></svg></div><h3 class="text-[20px] font-bold leading-6 mt-4">4. Delivery Assurance</h3><p class="text-[14px] leading-5 text-brand-muted mt-2">Cross-tabulation checks, data delivery reviews, specification matching, and secure localized exports help ensure files are ready for analysis.</p></article>
+          <article class="rounded-lg border border-brand-green bg-white p-6 min-h-[180px]"><div class="w-10 h-10 rounded-full bg-green-50/40 text-brand-green flex items-center justify-center" aria-hidden="true"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3 20 6v5c0 5-3.3 8-8 10-4.7-2-8-5-8-10V6l8-3Z"/><path stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m8.5 12 2.2 2.2 4.8-5"/></svg></div><h3 class="text-[20px] font-bold leading-6 mt-4">2. Collection Integrity</h3><p class="text-[14px] leading-5 text-brand-muted mt-2">Respondent validation, real-time fraud screening, attention checks, and location or eligibility checks help protect the integrity of fieldwork.</p></article>
+          <article class="rounded-lg border border-brand-gold bg-white p-6 min-h-[180px]"><div class="w-10 h-10 rounded-full bg-yellow-50/40 text-brand-gold flex items-center justify-center" aria-hidden="true"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 5h16l-6.5 7.2V19l-3 1v-7.8L4 5Z"/><path stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m9.5 8.5 1.6 1.6 3.4-3.4"/></svg></div><h3 class="text-[20px] font-bold leading-6 mt-4">3. Processing &amp; Cleaning</h3><p class="text-[14px] leading-5 text-brand-muted mt-2">Consistent review for outliers, response patterns, open-ended answers, duplicate records, and data completeness supports dependable analysis.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-brand-bggray py-8 lg:py-10" aria-label="Data quality highlights">
+      <div class="max-w-[1240px] mx-auto px-6 lg:px-0 grid grid-cols-2 lg:grid-cols-4 gap-y-7 gap-x-4 text-center">
+        <div><p class="text-[36px] font-bold leading-none text-brand-blue">99.5%</p><p class="text-[13px] font-semibold mt-2">Data Accuracy</p><p class="text-[12px] text-brand-muted mt-1">Rigorous logic compliance</p></div>
+        <div><p class="text-[36px] font-bold leading-none text-brand-green">3-Layer</p><p class="text-[13px] font-semibold mt-2">Fraud Filtration</p><p class="text-[12px] text-brand-muted mt-1">Bot and duplication screening</p></div>
+        <div><p class="text-[36px] font-bold leading-none text-brand-gold">15+</p><p class="text-[13px] font-semibold mt-2">Project Checkpoints</p><p class="text-[12px] text-brand-muted mt-1">Review through each phase</p></div>
+        <div><p class="text-[36px] font-bold leading-none text-brand-red">&lt;2.0%</p><p class="text-[13px] font-semibold mt-2">Rejection Average</p><p class="text-[12px] text-brand-muted mt-1">Reviewed against study criteria</p></div>
+      </div>
+    </section>
+
+    <section class="bg-white py-[56px] lg:py-[64px]">
+      <div class="max-w-[1240px] mx-auto px-6 lg:px-0"><p class="text-[12px] font-semibold uppercase tracking-[1.2px] text-brand-blue">Chronological Safeguards</p><h2 class="text-[30px] lg:text-[38px] font-bold leading-tight text-brand-dark font-helvetica mt-3">Real-Time Integrity Pipeline</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+          <article class="rounded-lg border border-brand-blue bg-white p-5"><div class="flex justify-between gap-2 text-[11px] font-semibold text-brand-blue"><span>STAGE 01</span><span class="text-brand-muted">PRE-FIELD</span></div><h3 class="text-[18px] font-bold mt-4">Programming &amp; QA</h3><p class="text-[13px] leading-5 text-brand-muted mt-2">Questionnaire programming, device compatibility, routing validation, and small-batch soft-launch reviews.</p></article>
+          <article class="rounded-lg border border-brand-gold bg-white p-5"><div class="flex justify-between gap-2 text-[11px] font-semibold text-brand-green"><span>STAGE 02</span><span class="text-brand-muted">IN-FIELD</span></div><h3 class="text-[18px] font-bold mt-4">Real-Time Auditing</h3><p class="text-[13px] leading-5 text-brand-muted mt-2">Attention checks, timing and response pattern review, with fieldwork monitoring for emerging issues.</p></article>
+          <article class="rounded-lg border border-brand-green bg-white p-5"><div class="flex justify-between gap-2 text-[11px] font-semibold text-brand-gold"><span>STAGE 03</span><span class="text-brand-muted">POST-FIELD</span></div><h3 class="text-[18px] font-bold mt-4">Data Scrubbing</h3><p class="text-[13px] leading-5 text-brand-muted mt-2">Logic consistency checks, duplicate record review, outlier analysis, and documented cleaning decisions.</p></article>
+          <article class="rounded-lg border border-brand-red bg-white p-5"><div class="flex justify-between gap-2 text-[11px] font-semibold text-brand-red"><span>STAGE 04</span><span class="text-brand-muted">DELIVERY</span></div><h3 class="text-[18px] font-bold mt-4">Export Assurance</h3><p class="text-[13px] leading-5 text-brand-muted mt-2">Schema and format alignment, secure handover, and final checks against project specifications.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-brand-bggray py-[56px] lg:py-[64px]">
+      <div class="max-w-[1240px] mx-auto px-6 lg:px-0"><p class="text-[12px] font-semibold uppercase tracking-[1.2px] text-brand-blue">Proprietary Infrastructure</p><h2 class="text-[30px] lg:text-[38px] font-bold leading-tight text-brand-dark font-helvetica mt-3">Tools Powering Our Accuracy</h2>
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mt-8">
+          <div class="space-y-7"><article><h3 class="text-[20px] font-bold">1. AI-Assisted Fraud Screening</h3><p class="text-[14px] leading-[22px] text-brand-muted mt-2">Layered review can flag suspicious response patterns, duplicate entries, and unusual completion behavior for further quality review.</p></article><article><h3 class="text-[20px] font-bold">2. Live Fieldwork Monitoring</h3><p class="text-[14px] leading-[22px] text-brand-muted mt-2">Project teams monitor fieldwork progress and quality indicators, helping them spot issues early and keep delivery aligned with study requirements.</p></article></div>
+          <img src="assets/imgs/blog-data-science.jpg" alt="Data visualization and analytics supporting research quality review" class="w-full max-w-[520px] h-[260px] object-cover rounded-lg lg:justify-self-end">
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-[44px] lg:py-[52px]" aria-label="Security and standards">
+      <div class="max-w-[1240px] mx-auto px-6 lg:px-0"><div class="flex flex-wrap items-center justify-between gap-4"><p class="text-[12px] font-semibold uppercase tracking-[1.2px] text-brand-blue">Security &amp; Standards</p><p class="text-[13px] font-medium text-brand-muted">Quality practices aligned with responsible research</p></div><div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-6"><div class="rounded-md border border-brand-blue/30 bg-blue-50 px-4 py-3 text-center text-[14px] font-semibold text-brand-blue">ISO 20252</div><div class="rounded-md border border-brand-gold/40 bg-yellow-50 px-4 py-3 text-center text-[14px] font-semibold text-brand-gold">GDPR Aware</div><div class="rounded-md border border-brand-green/30 bg-green-50 px-4 py-3 text-center text-[14px] font-semibold text-brand-green">ESOMAR Guidance</div><div class="rounded-md border border-brand-red/30 bg-red-50 px-4 py-3 text-center text-[14px] font-semibold text-brand-red">MRS Code</div></div></div>
+    </section>
+
+    <section id="start-research" class="relative overflow-hidden mt-8 lg:mt-10 py-[68px] lg:py-[76px] text-center">
+      <div class="absolute inset-0" aria-hidden="true"><img src="assets/imgs/gradient-bg.png" alt="" class="w-full h-full object-cover"></div>
+      <div class="relative max-w-[900px] mx-auto px-6"><p class="text-[12px] font-semibold uppercase tracking-[1.2px] text-brand-blue">Ready to start?</p><h2 class="text-[32px] lg:text-[40px] font-bold leading-[1.2] text-brand-dark font-helvetica mt-3">Ready to protect the quality of your next study?</h2><p class="text-[14px] leading-[22px] text-brand-muted mt-5 max-w-[700px] mx-auto">Talk with our research team about quality checks, respondent validation, fieldwork monitoring, and delivery requirements for your next project.</p><div class="flex flex-wrap justify-center gap-4 mt-6"><a href="contact-us.html" class="bg-brand-blue text-white text-[12px] font-semibold px-6 py-2.5 rounded-lg hover:bg-blue-700 transition">Plan Your Study Checks</a><a href="contact-us.html" class="border border-brand-dark text-brand-dark text-[12px] font-semibold px-6 py-2.5 rounded-lg hover:bg-brand-dark hover:text-white transition">Request Framework Details</a></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer relative bg-white overflow-hidden border-t border-brand-bordergray" style="height:469px">
+  <div class="footer-background-art absolute inset-x-0 bottom-0 h-[360px]"><img src="assets/imgs/svg footer.svg" alt="" class="w-full h-full object-contain object-bottom"></div>
+  <div class="relative h-full px-6 lg:px-[101px] pt-[62px]">
+    <div class="flex flex-col lg:flex-row justify-between gap-10">
+      <div class="max-w-[316px]">
+        <div class="flex items-center gap-[10.54px] mb-6"><a href="index.html"><img src="assets/imgs/logo-sp.png" alt="Survey Pacific" class="h-[42.26px] object-contain"></a></div>
+        <h3 class="text-[30px] font-bold leading-9 text-brand-textdark font-helvetica">People make markets.</h3>
+        <p class="text-[14px] leading-[22.75px] text-[#656363] mt-2 max-w-[300px]">Independent research and data collection for better decisions.</p>
+        <div class="flex gap-[16px] mt-[30px]"><img src="assets/imgs/instaicon.png" alt="Instagram" class="w-[24px] h-[24px] object-contain"><img src="assets/imgs/linkedin.png" alt="LinkedIn" class="w-[24px] h-[24px] object-contain"></div>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-8">
+        <div class="w-[171.6px]"><h4 class="text-[12px] font-bold uppercase tracking-[1.2px] text-[rgba(16,38,51,0.79)] font-helvetica">Research</h4><ul class="mt-5 space-y-2.5"><li><a href="market-research.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Market Research</a></li><li><a href="user-research.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">User Research</a></li><li><a href="social-research.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Social &amp; Public Research</a></li><li><a href="brand-consumer-research.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Brand &amp; Consumer Insights</a></li></ul></div>
+        <div class="w-[171.6px]"><h4 class="text-[12px] font-bold uppercase tracking-[1.2px] text-[rgba(16,38,51,0.79)] font-helvetica">Data Collection</h4><ul class="mt-4 space-y-2"><li><a href="online-survey.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Online Surveys</a></li><li><a href="face-to-face-survey.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Face-to-Face Survey</a></li><li><a href="telephone-cati-survey.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Telephone/CATI Survey</a></li><li><a href="depth-interviews.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Depth Interviews</a></li><li><a href="focus-groups.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Focus Groups</a></li><li><a href="product-testing.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Product Testing</a></li><li><a href="mystery-shop.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Mystery Shop</a></li><li><a href="diary-studies.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Diary Studies</a></li><li><a href="multi-country-fieldwork.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Multi-Country Fieldwork</a></li></ul></div>
+        <div class="w-[171.6px]"><h4 class="text-[12px] font-bold uppercase tracking-[1.2px] text-[rgba(16,38,51,0.79)] font-helvetica">Company</h4><ul class="mt-5 space-y-2.5"><li><a href="about-us.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">About Survey Pacific</a></li><li><a href="global-network.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Global Network</a></li><li><a href="leadership.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Leadership</a></li><li><a href="careers.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Careers</a></li><li><a href="#" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Research Ethics</a></li><li><a href="contact-us.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Contact</a></li></ul></div>
+        <div class="w-[171.6px]"><h4 class="text-[12px] font-bold uppercase tracking-[1.2px] text-[rgba(16,38,51,0.79)] font-helvetica">Participants &amp; Partners</h4><ul class="mt-5 space-y-2.5"><li><a href="#" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Join WeSample</a></li><li><a href="become-supplier.html" class="text-[13px] text-[#1E354A] hover:text-brand-blue transition">Become a Supplier</a></li></ul></div>
+      </div>
+    </div>
+    <button id="backToTop" class="fixed bottom-[30px] right-[30px] z-50 w-[52px] h-[52px] bg-brand-blue rounded-full shadow-[0_5.76px_5.76px_rgba(0,0,0,0.15)] flex items-center justify-center hover:bg-blue-700 transition opacity-0 invisible" aria-label="Back to top"><svg class="w-6 h-6 text-white transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg></button>
+    <div class="absolute inset-x-6 lg:inset-x-[101px] bottom-[20px] flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center"><p class="text-[12px] text-white font-normal leading-4">&copy; 2026 Survey Pacific Private Limited. All rights reserved.</p><div class="flex flex-wrap gap-6"><a href="#" class="text-[12px] text-[#D4DAE0] hover:text-white transition">Privacy Policy</a><a href="#" class="text-[12px] text-[#D4DAE0] hover:text-white transition">Terms of Use</a><a href="#" class="text-[12px] text-[#D4DAE0] hover:text-white transition">Cookie Policy</a><a href="#" class="text-[12px] text-[#D4DAE0] hover:text-white transition">Sitemap</a></div></div>
+  </div>
+</footer>
+
+
+<!-- ==================== START A STUDY MODAL ==================== -->
+<div id="studyModal" class="study-modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="studyModalTitle" aria-modal="true">
+  <div class="study-modal-backdrop"></div>
+  <div class="study-modal-container">
+    <div class="study-modal-card" id="studyModalCard">
+
+      <!-- Close button -->
+      <button id="studyModalClose" class="study-modal-close" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+
+      <!-- ===== FORM VIEW ===== -->
+      <div id="studyFormView" class="study-modal-view">
+        <!-- Header -->
+        <div class="study-modal-header">
+          <h2 id="studyModalTitle" class="study-modal-title">Start a Study</h2>
+          <p class="study-modal-subtitle">Tell us about your research needs and we'll get back to you within 24 hours.</p>
+        </div>
+
+        <!-- Form -->
+        <form id="studyInquiryForm" class="study-modal-form" novalidate>
+          <!-- Name -->
+          <div class="study-field">
+            <label for="studyName" class="study-label">Full Name</label>
+            <input type="text" id="studyName" name="name" class="study-input theme-blue" placeholder="e.g. Priya Sharma" required autocomplete="name">
+            <span class="study-error" id="studyNameError"></span>
+          </div>
+
+          <!-- Email -->
+          <div class="study-field">
+            <label for="studyEmail" class="study-label">Work Email</label>
+            <input type="email" id="studyEmail" name="email" class="study-input theme-blue" placeholder="e.g. priya@company.com" required autocomplete="email">
+            <span class="study-error" id="studyEmailError"></span>
+          </div>
+
+          <!-- Topic Dropdown -->
+          <div class="study-field">
+            <label for="studyTopic" class="study-label">Research Topic</label>
+            <div class="study-select-wrapper">
+              <select id="studyTopic" name="topic" class="study-input study-select theme-blue" required>
+                <option value="" disabled selected>Select a topic</option>
+                <option value="market-research">Market Research</option>
+                <option value="online-survey">Online Survey</option>
+                <option value="face-to-face-survey">Face-to-Face / CAPI Survey</option>
+                <option value="telephone-cati">Telephone / CATI Survey</option>
+                <option value="depth-interviews">Depth Interviews</option>
+                <option value="focus-groups">Focus Groups</option>
+                <option value="product-testing">Product Testing</option>
+                <option value="mystery-shopping">Mystery Shopping</option>
+                <option value="diary-studies">Diary Studies</option>
+                <option value="brand-consumer">Brand & Consumer Insights</option>
+                <option value="user-research">User Experience Research</option>
+                <option value="multi-country">Multi-Country Fieldwork</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+              <svg class="study-select-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+            <span class="study-error" id="studyTopicError"></span>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" id="studySubmitBtn" class="study-submit-btn theme-blue">
+            <span id="studySubmitText">Submit Inquiry</span>
+            <svg id="studySubmitSpinner" class="study-spinner hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"/><path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- ===== SUCCESS VIEW ===== -->
+      <div id="studySuccessView" class="study-modal-view study-success-view hidden">
+        <div class="study-success-content">
+          <!-- Animated checkmark -->
+          <div class="study-success-check theme-blue">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" class="study-check-circle"/>
+              <path d="m9 12 2 2 4-4" class="study-check-path"/>
+            </svg>
+          </div>
+          <h3 class="study-success-title">Thank You!</h3>
+          <p class="study-success-message">Our team will surely contact you<br>within <strong>24 hours</strong>.</p>
+          <p class="study-success-sub">Thank you for your interest in Survey Pacific.</p>
+          <button id="studySuccessClose" class="study-success-btn theme-blue">Done</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+/* ===== MODAL OVERLAY ===== */
+.study-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.study-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.study-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 38, 51, 0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.study-modal-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 480px;
+  margin: 16px;
+}
+
+/* ===== CARD ===== */
+.study-modal-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 32px 80px rgba(16, 38, 51, 0.22), 0 0 0 1px rgba(255,255,255,0.08);
+  overflow: hidden;
+  transform: translateY(24px) scale(0.97);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.study-modal-overlay.active .study-modal-card {
+  transform: translateY(0) scale(1);
+}
+
+/* ===== CLOSE ===== */
+.study-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: #F4F5F7;
+  border-radius: 10px;
+  color: #1E354A;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.study-modal-close:hover {
+  background: #E8EAED;
+  transform: scale(1.08);
+}
+
+/* ===== VIEWS ===== */
+.study-modal-view {
+  padding: 40px 36px 36px;
+}
+.study-modal-view.hidden {
+  display: none;
+}
+
+/* ===== HEADER ===== */
+.study-modal-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.study-modal-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.study-modal-icon.theme-blue  { background: rgba(29,86,212,0.08); color: #1D56D4; }
+.study-modal-icon.theme-green { background: rgba(30,158,107,0.08); color: #1E9E6B; }
+.study-modal-icon.theme-gold  { background: rgba(232,184,48,0.10); color: #C99A1E; }
+
+.study-modal-title {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1E354A;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.study-modal-subtitle {
+  font-size: 13.5px;
+  color: #6B7A8D;
+  margin: 8px 0 0;
+  line-height: 1.55;
+}
+
+/* ===== FORM ===== */
+.study-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.study-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.study-label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #1E354A;
+  letter-spacing: 0.2px;
+}
+
+.study-input {
+  width: 100%;
+  height: 46px;
+  padding: 0 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #1E354A;
+  background: #F8F9FB;
+  border: 1.5px solid #E2E5EA;
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.study-input::placeholder { color: #A3ADBA; }
+.study-input:hover { background: #F2F4F7; }
+
+.study-input.theme-blue:focus  { border-color: #1D56D4; box-shadow: 0 0 0 3px rgba(29,86,212,0.10); background: #fff; }
+.study-input.theme-green:focus { border-color: #1E9E6B; box-shadow: 0 0 0 3px rgba(30,158,107,0.10); background: #fff; }
+.study-input.theme-gold:focus  { border-color: #E8B830; box-shadow: 0 0 0 3px rgba(232,184,48,0.10); background: #fff; }
+
+.study-input.field-error { border-color: #E53E3E; box-shadow: 0 0 0 3px rgba(229,62,62,0.08); }
+
+/* Select wrapper */
+.study-select-wrapper {
+  position: relative;
+}
+.study-select {
+  padding-right: 40px;
+  cursor: pointer;
+}
+.study-select option[value=""][disabled] { color: #A3ADBA; }
+.study-select-chevron {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6B7A8D;
+  pointer-events: none;
+}
+
+/* Error messages */
+.study-error {
+  font-size: 12px;
+  color: #E53E3E;
+  min-height: 0;
+  line-height: 1.3;
+  transition: all 0.2s;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.study-submit-btn {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 6px;
+  transition: transform 0.18s, box-shadow 0.18s, opacity 0.18s;
+}
+.study-submit-btn.theme-blue  { background: linear-gradient(135deg, #1D56D4 0%, #2B6BF0 100%); }
+.study-submit-btn.theme-green { background: linear-gradient(135deg, #1E9E6B 0%, #25B87D 100%); }
+.study-submit-btn.theme-gold  { background: linear-gradient(135deg, #D4A21E 0%, #E8B830 100%); }
+
+.study-submit-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(16, 38, 51, 0.18);
+}
+.study-submit-btn:active {
+  transform: translateY(0);
+}
+.study-submit-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Spinner */
+.study-spinner {
+  animation: studySpin 0.7s linear infinite;
+}
+.study-spinner.hidden { display: none; }
+@keyframes studySpin { to { transform: rotate(360deg); } }
+
+/* ===== SUCCESS VIEW ===== */
+.study-success-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+}
+
+.study-success-content {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.study-success-check {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  animation: studyCheckPop 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+.study-success-check.theme-blue  { background: rgba(29,86,212,0.08); color: #1D56D4; }
+.study-success-check.theme-green { background: rgba(30,158,107,0.08); color: #1E9E6B; }
+.study-success-check.theme-gold  { background: rgba(232,184,48,0.10); color: #C99A1E; }
+
+@keyframes studyCheckPop {
+  0% { transform: scale(0.3); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.study-check-circle {
+  stroke-dasharray: 63;
+  stroke-dashoffset: 63;
+  animation: studyCircleDraw 0.6s ease-out 0.3s forwards;
+}
+@keyframes studyCircleDraw {
+  to { stroke-dashoffset: 0; }
+}
+
+.study-check-path {
+  stroke-dasharray: 20;
+  stroke-dashoffset: 20;
+  animation: studyTickDraw 0.35s ease-out 0.7s forwards;
+}
+@keyframes studyTickDraw {
+  to { stroke-dashoffset: 0; }
+}
+
+.study-success-title {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1E354A;
+  margin: 0 0 12px;
+}
+
+.study-success-message {
+  font-size: 15px;
+  color: #3D4F5F;
+  line-height: 1.6;
+  margin: 0 0 8px;
+}
+.study-success-message strong { color: #1E354A; }
+
+.study-success-sub {
+  font-size: 13px;
+  color: #8A96A3;
+  margin: 0 0 28px;
+}
+
+.study-success-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  min-width: 140px;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.study-success-btn.theme-blue  { background: linear-gradient(135deg, #1D56D4 0%, #2B6BF0 100%); }
+.study-success-btn.theme-green { background: linear-gradient(135deg, #1E9E6B 0%, #25B87D 100%); }
+.study-success-btn.theme-gold  { background: linear-gradient(135deg, #D4A21E 0%, #E8B830 100%); }
+.study-success-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(16, 38, 51, 0.18);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 520px) {
+  .study-modal-container { max-width: 100%; margin: 12px; }
+  .study-modal-view { padding: 32px 24px 28px; }
+  .study-modal-title { font-size: 22px; }
+  .study-success-view { min-height: 320px; }
+}
+</style>
+
+<script>
+(function() {
+  'use strict';
+
+  const overlay   = document.getElementById('studyModal');
+  const closeBtn  = document.getElementById('studyModalClose');
+  const form      = document.getElementById('studyInquiryForm');
+  const formView  = document.getElementById('studyFormView');
+  const successView = document.getElementById('studySuccessView');
+  const successCloseBtn = document.getElementById('studySuccessClose');
+  const submitBtn = document.getElementById('studySubmitBtn');
+  const submitText = document.getElementById('studySubmitText');
+  const spinner   = document.getElementById('studySubmitSpinner');
+
+  // Fields
+  const nameInput  = document.getElementById('studyName');
+  const emailInput = document.getElementById('studyEmail');
+  const topicInput = document.getElementById('studyTopic');
+
+  // Error spans
+  const nameError  = document.getElementById('studyNameError');
+  const emailError = document.getElementById('studyEmailError');
+  const topicError = document.getElementById('studyTopicError');
+  let focusTimer = null;
+
+  // A page restored from the browser's back/forward cache must never retain
+  // an open modal from its previous visit.
+  function resetModalState() {
+    if (focusTimer) {
+      clearTimeout(focusTimer);
+      focusTimer = null;
+    }
+    overlay.classList.remove('active');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  resetModalState();
+  window.addEventListener('pagehide', resetModalState);
+  window.addEventListener('pageshow', resetModalState);
+
+  // Open modal - attach to all "Start a Study" buttons
+  function openModal(e) {
+    if (!e || !e.isTrusted || !e.currentTarget.matches('button[data-open-study-modal]')) return;
+    e.preventDefault();
+    if (overlay.classList.contains('active')) return;
+    overlay.classList.add('active');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    // Reset to form view
+    formView.classList.remove('hidden');
+    successView.classList.add('hidden');
+    form.reset();
+    clearErrors();
+    // Focus first input after animation
+    if (focusTimer) clearTimeout(focusTimer);
+    focusTimer = setTimeout(function() {
+      focusTimer = null;
+      if (overlay.classList.contains('active')) nameInput.focus();
+    }, 350);
+  }
+
+  function closeModal() {
+    resetModalState();
+  }
+
+  // Reuse the same thank-you view after successful submissions elsewhere.
+  window.showStudyThankYou = function() {
+    formView.classList.add('hidden');
+    successView.classList.remove('hidden');
+    overlay.classList.add('active');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+
+  // Bind all triggers
+  document.querySelectorAll('button[data-open-study-modal]').forEach(function(btn) {
+    btn.addEventListener('click', openModal);
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+  successCloseBtn.addEventListener('click', closeModal);
+
+  // Close on backdrop click
+  overlay.querySelector('.study-modal-backdrop').addEventListener('click', closeModal);
+
+  // Close on Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && overlay.classList.contains('active')) closeModal();
+  });
+
+  // Validation helpers
+  function validateEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  function clearErrors() {
+    [nameInput, emailInput, topicInput].forEach(function(el) { el.classList.remove('field-error'); });
+    nameError.textContent = '';
+    emailError.textContent = '';
+    topicError.textContent = '';
+  }
+
+  // Clear individual error on input
+  nameInput.addEventListener('input', function() { nameInput.classList.remove('field-error'); nameError.textContent = ''; });
+  emailInput.addEventListener('input', function() { emailInput.classList.remove('field-error'); emailError.textContent = ''; });
+  topicInput.addEventListener('change', function() { topicInput.classList.remove('field-error'); topicError.textContent = ''; });
+
+  // Submit
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    clearErrors();
+
+    let valid = true;
+    const name  = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const topic = topicInput.value;
+
+    if (!name) {
+      nameInput.classList.add('field-error');
+      nameError.textContent = 'Please enter your name.';
+      valid = false;
+    }
+    if (!email) {
+      emailInput.classList.add('field-error');
+      emailError.textContent = 'Please enter your email.';
+      valid = false;
+    } else if (!validateEmail(email)) {
+      emailInput.classList.add('field-error');
+      emailError.textContent = 'Please enter a valid email address.';
+      valid = false;
+    }
+    if (!topic) {
+      topicInput.classList.add('field-error');
+      topicError.textContent = 'Please select a research topic.';
+      valid = false;
+    }
+
+    if (!valid) return;
+
+    // Simulate submission
+    submitBtn.disabled = true;
+    submitText.textContent = 'Submitting…';
+    spinner.classList.remove('hidden');
+
+    setTimeout(function() {
+      // Show success
+      formView.classList.add('hidden');
+      successView.classList.remove('hidden');
+      // Reset button state
+      submitBtn.disabled = false;
+      submitText.textContent = 'Submit Inquiry';
+      spinner.classList.add('hidden');
+    }, 1200);
+  });
+})();
+</script>
+  <script src="js/main.js"></script>
+</body>
+</html>
